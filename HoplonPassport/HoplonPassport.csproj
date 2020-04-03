@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HoplonCollection.cs" />
+    <Compile Include="HoplonCollectionNode.cs" />
     <Compile Include="IHoplonCollection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

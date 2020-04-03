@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoplonPassport", "HoplonPas
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7F55F498-DDB3-4B45-A930-AD4D8BDF137B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoplonPassport.UnitTests", "HoplonPassport.UnitTests\HoplonPassport.UnitTests.csproj", "{8B90BD3E-644E-4759-A8EA-03C7B4C3CAD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{858E7BAC-97B4-430B-AE80-03C01278B986}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{858E7BAC-97B4-430B-AE80-03C01278B986}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{858E7BAC-97B4-430B-AE80-03C01278B986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B90BD3E-644E-4759-A8EA-03C7B4C3CAD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B90BD3E-644E-4759-A8EA-03C7B4C3CAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B90BD3E-644E-4759-A8EA-03C7B4C3CAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B90BD3E-644E-4759-A8EA-03C7B4C3CAD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
