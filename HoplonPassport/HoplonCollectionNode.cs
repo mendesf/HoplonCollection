@@ -4,7 +4,12 @@ namespace Hoplon.Collections
 {
     public class HoplonCollectionNode
     {
-        private readonly SortedDictionary<int, SortedSet<string>> dictionary = new SortedDictionary<int, SortedSet<string>>();
+        private readonly SortedDictionary<int, SortedSet<string>> dictionary;
+
+        public HoplonCollectionNode()
+        {
+            dictionary = new SortedDictionary<int, SortedSet<string>>();
+        }
 
         // A chamada do método RemoveByValue é uma operação O(n)
         // Em um SortedDictionary, TryGetValue e Add são operações O(log(n))
@@ -26,10 +31,7 @@ namespace Hoplon.Collections
             return values.Add(value);
         }
 
-        // Aqui apesar de haver um nested loop, uma coleção não está interando sobre a outra
-        // Complexidade assintótica = O(a + b) = O(n)
-        public IList<string> Get(int start, int end)
-        {
+        private void BeforeList(ref int start, ref int end) {
             var count = 0;
 
             foreach (var subIndex in dictionary.Keys)
@@ -55,7 +57,14 @@ namespace Hoplon.Collections
             {
                 end = start;
             }
+        }
 
+        // Aqui apesar de haver um nested loop, uma coleção não está interando sobre a outra
+        // Complexidade assintótica = O(a + b) = O(n)
+        public IList<string> Get(int start, int end)
+        {
+            BeforeList(ref start, ref end);
+            
             var values = new List<string>();
             var index = 0;
 

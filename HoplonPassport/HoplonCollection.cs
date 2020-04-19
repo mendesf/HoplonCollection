@@ -4,7 +4,12 @@ namespace Hoplon.Collections
 {
     public class HoplonCollection : IHoplonCollection
     {
-        private readonly Dictionary<string, HoplonCollectionNode> nodes = new Dictionary<string, HoplonCollectionNode>();
+        private readonly Dictionary<string, HoplonCollectionNode> nodes;
+
+        public HoplonCollection()
+        {
+            nodes = new Dictionary<string, HoplonCollectionNode>();
+        }
 
         // Em um Dictionary, TryGetValue é uma operação O(1)
         // A chamanda do método Add é uma operação O(n)
